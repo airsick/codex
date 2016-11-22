@@ -1,0 +1,82 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+body {
+	height: 100%;
+}
+#gamecontainer {
+	/* makes it fullscreen */
+	position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+    /* stretch to fit screen*/
+    background-image: url(images/splashscreen.png);
+    background-size:     100% 100%;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-color: #121119;
+}
+.gamelayer {
+	/* makes it fullscreen */
+	position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+    height: 100%;
+	width: 100%;
+}
+
+#menuscreen #title {
+	position: fixed;
+	top: 36.5%;
+	left: 30.5%;
+	width: 39%;
+	height: 27%;
+}
+
+#menuscreen span {
+	margin: 20px;
+	font-family: Georgia, Georgia, serif;
+	font-size: 48px;
+	cursor: pointer;
+	color: white;
+	text-shadow: -4px 4px 0px rgba(50, 75, 50, 0.83);
+}
+
+#menuscreen #mainmenu {
+	position: fixed;
+	top: 34%;
+	left: 30.5%;
+	width: 39%;
+	height: 35%;
+
+	background-image: url(images/textbox.png);
+    background-size:     100% 100%;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+#menuscreen #mainmenu #singleplayer{
+	position: fixed;
+	top: 36%;
+	left: 33%;
+}
+
+#menuscreen #mainmenu #multiplayer{
+	position: fixed;
+	color: gray;
+	top: 43%;
+	left: 33%;
+}
+
+#gamescreen {
+	background-color: #241000;
+}
