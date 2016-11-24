@@ -92,3 +92,176 @@ span {
 #gamescreen {
     background-color: #121119;
 }
+
+.cardholder {
+	background-image: url(images/cards/neutral/0003_timely_messenger.gif);
+    background-size:     100% 100%;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 20%;
+    width: 10%;
+}
+
+#gamescreen #patrol10{
+    top: 40%;
+    left: 30%;
+}
+#gamescreen #patrol11{
+    top: 40%;
+    left: 40%;
+}
+#gamescreen #patrol12{
+    top: 40%;
+    left: 50%;
+}
+#gamescreen #patrol13{
+    top: 40%;
+    left: 60%;
+}
+#gamescreen #patrol14{
+    top: 40%;
+    left: 70%;
+}
+
+#gamescreen #patrol20{
+    top: 20%;
+    left: 30%;
+}
+#gamescreen #patrol21{
+    top: 20%;
+    left: 40%;
+}
+#gamescreen #patrol22{
+    top: 20%;
+    left: 50%;
+}
+#gamescreen #patrol23{
+    top: 20%;
+    left: 60%;
+}
+#gamescreen #patrol24{
+    top: 20%;
+    left: 70%;
+}
+
+#gamescreen #discard1{
+	background-image: url(images/cards/back.jpg);
+    top: 40%;
+    left: 90%;
+}
+#gamescreen #discard2{
+	background-image: url(images/cards/back.jpg);
+    top: 20%;
+    left: 90%;
+}
+
+#gamescreen #deck1{
+	background-image: url(images/cards/back.jpg);
+    top: 60%;
+    left: 90%;
+}
+#gamescreen #deck2{
+	background-image: url(images/cards/back.jpg);
+    top: 0;
+    left: 90%;
+}
+
+#gamescreen #hero10{
+    top: 40%;
+    left: 0;
+    background-image: url(board/hero.png);
+}
+#gamescreen #hero11{
+    top: 40%;
+    left: 10%;
+    background-image: url(board/hero.png);
+}
+#gamescreen #hero12{
+    top: 40%;
+    left: 20%;
+    background-image: url(board/hero.png);
+}
+
+#gamescreen #hero20{
+    top: 20%;
+    left: 0;
+    background-image: url(board/hero.png);
+}
+#gamescreen #hero21{
+    top: 20%;
+    left: 10%;
+    background-image: url(board/hero.png);
+}
+#gamescreen #hero22{
+    top: 20%;
+    left: 20%;
+    background-image: url(board/hero.png);
+}
+
+#gamescreen #cardzoom{
+    top: 20%;
+    left: 0;
+    height: 40%;
+    width: 20%;
+}
+
+.baseui {
+    background-size:     100% 100%;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 5%;
+    width: 7.5%;
+}
+
+#gamescreen #base1{
+	background-image: url(board/base.png);
+    left: 11.25%;
+    top: 75%;
+}
+#gamescreen #tech1_1{
+	background-image: url(board/tech1.png);
+    left: 11.25%;
+    top: 70%;
+}
+#gamescreen #tech2_1{
+	background-image: url(board/tech2.png);
+    left: 11.25%;
+    top: 65%;
+}
+#gamescreen #tech3_1{
+	background-image: url(board/tech3.png);
+    left: 11.25%;
+    top: 60%;
+}
+
+#gamescreen #base2{
+	background-image: url(board/base.png);
+    left: 11.25%;
+    top: 15%;
+}
+#gamescreen #tech1_2{
+	background-image: url(board/tech1.png);
+    left: 11.25%;
+    top: 10%;
+}
+#gamescreen #tech2_2{
+	background-image: url(board/tech2.png);
+    left: 11.25%;
+    top: 5%;
+}
+#gamescreen #tech3_2{
+	background-image: url(board/tech3.png);
+    left: 11.25%;
+    top: 0%;
+}
+/*
+#gamescreen #board{
+	background-image: url(board/board.png);
+    background-size:     100% 100%;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    left: 0;
+    top: 60%;
+    height: 40%;
+    width: 30%;
+}*/
