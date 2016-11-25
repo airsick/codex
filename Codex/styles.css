@@ -103,44 +103,75 @@ span {
 }
 
 #gamescreen #patrol10{
+	background-image: url(board/patrol0.png);
     top: 40%;
     left: 30%;
 }
 #gamescreen #patrol11{
+	background-image: url(board/patrol1.png);
     top: 40%;
     left: 40%;
 }
 #gamescreen #patrol12{
+	background-image: url(board/patrol2.png);
     top: 40%;
     left: 50%;
 }
 #gamescreen #patrol13{
+	background-image: url(board/patrol3.png);
     top: 40%;
     left: 60%;
 }
 #gamescreen #patrol14{
+	background-image: url(board/patrol4.png);
     top: 40%;
     left: 70%;
 }
 
 #gamescreen #patrol20{
+	background-image: url(board/patrol0.png);
     top: 20%;
     left: 30%;
 }
 #gamescreen #patrol21{
+	background-image: url(board/patrol1.png);
     top: 20%;
     left: 40%;
 }
 #gamescreen #patrol22{
+	background-image: url(board/patrol2.png);
     top: 20%;
     left: 50%;
 }
 #gamescreen #patrol23{
+	background-image: url(board/patrol3.png);
     top: 20%;
     left: 60%;
 }
 #gamescreen #patrol24{
+	background-image: url(board/patrol4.png);
     top: 20%;
+    left: 70%;
+}
+
+#gamescreen #hand0{
+    top: 80%;
+    left: 30%;
+}
+#gamescreen #hand1{
+    top: 80%;
+    left: 40%;
+}
+#gamescreen #hand2{
+    top: 80%;
+    left: 50%;
+}
+#gamescreen #hand3{
+    top: 80%;
+    left: 60%;
+}
+#gamescreen #hand4{
+    top: 80%;
     left: 70%;
 }
 
@@ -198,6 +229,36 @@ span {
     background-image: url(board/hero.png);
 }
 
+#gamescreen #worker1{
+	background-image: url(images/cards/neutral/worker4.png);
+    top: 60%;
+    left: 0;
+}
+#gamescreen #worker1 #value{
+    top: 54%;
+    left: 3%;
+    width: 41%;
+    height: 23%;
+    background-color: gray;
+    text-align: center;
+    font-size: 3vmin;
+}
+
+#gamescreen #worker2{
+	background-image: url(images/cards/neutral/worker5.png);
+    top: 0;
+    left: 0;
+}
+#gamescreen #worker2 #value{
+    top: 54%;
+    left: 3%;
+    width: 41%;
+    height: 23%;
+    background-color: gray;
+    text-align: center;
+    font-size: 3vmin;
+}
+
 #gamescreen #cardzoom{
     top: 20%;
     left: 0;
@@ -215,44 +276,129 @@ span {
 
 #gamescreen #base1{
 	background-image: url(board/base.png);
-    left: 11.25%;
+    left: 10%;
     top: 75%;
+}
+#gamescreen #base1 #health{
+    left: 61%;
+    top: 28%;
+    width: 31%;
+    height: 41%;
+    background-color: red;
+    text-align: center;
+    font-size: 2vmin;
 }
 #gamescreen #tech1_1{
 	background-image: url(board/tech1.png);
-    left: 11.25%;
+    left: 10%;
     top: 70%;
+}
+#gamescreen #tech1_1 #health{
+    left: 69%;
+    top: 6%;
+    width: 25%;
+    height: 35%;
+    background-color: red;
+    text-align: center;
+    font-size: 2vmin;
 }
 #gamescreen #tech2_1{
 	background-image: url(board/tech2.png);
-    left: 11.25%;
+    left: 10%;
     top: 65%;
+}
+#gamescreen #tech2_1 #health{
+    left: 69%;
+    top: 6%;
+    width: 25%;
+    height: 35%;
+    background-color: red;
+    text-align: center;
+    font-size: 2vmin;
 }
 #gamescreen #tech3_1{
 	background-image: url(board/tech3.png);
-    left: 11.25%;
+    left: 10%;
     top: 60%;
+}
+#gamescreen #tech3_1 #health{
+    left: 69%;
+    top: 6%;
+    width: 25%;
+    height: 35%;
+    background-color: red;
+    text-align: center;
+    font-size: 2vmin;
 }
 
 #gamescreen #base2{
 	background-image: url(board/base.png);
-    left: 11.25%;
+    left: 10%;
     top: 15%;
 }
+#gamescreen #base2 #health{
+    left: 61%;
+    top: 28%;
+    width: 31%;
+    height: 41%;
+    background-color: red;
+    text-align: center;
+    font-size: 2vmin;
+}
+
 #gamescreen #tech1_2{
 	background-image: url(board/tech1.png);
-    left: 11.25%;
+    left: 10%;
     top: 10%;
+}
+#gamescreen #tech1_2 #health{
+    left: 69%;
+    top: 6%;
+    width: 25%;
+    height: 35%;
+    background-color: red;
+    text-align: center;
+    font-size: 2vmin;
 }
 #gamescreen #tech2_2{
 	background-image: url(board/tech2.png);
-    left: 11.25%;
+    left: 10%;
     top: 5%;
+}
+#gamescreen #tech2_2 #health{
+    left: 69%;
+    top: 6%;
+    width: 25%;
+    height: 35%;
+    background-color: red;
+    text-align: center;
+    font-size: 2vmin;
 }
 #gamescreen #tech3_2{
 	background-image: url(board/tech3.png);
-    left: 11.25%;
+    left: 10%;
     top: 0%;
+}
+#gamescreen #tech3_2 #health{
+    left: 69%;
+    top: 6%;
+    width: 25%;
+    height: 35%;
+    background-color: red;
+    text-align: center;
+    font-size: 2vmin;
+}
+
+#gamescreen #infobox{
+    left: 0;
+    top: 80%;
+    width: 30%;
+    height: 20%;
+	font-family: Georgia, Georgia, serif;
+	font-size: 2vmin;
+	color: white;
+	border-color:white;
+	border-style: solid;
 }
 /*
 #gamescreen #board{
