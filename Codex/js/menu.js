@@ -18,5 +18,6 @@ var menu = {
 	singleplayerClick: function() {
 		$('#menuscreen').hide();
 		$('#gamescreen').show();
+		game.start();
 	}
 }

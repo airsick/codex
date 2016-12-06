@@ -5,6 +5,9 @@
 	<title>Codex</title>
 	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/menu.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/cardList.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/UI.js" type="text/javascript" charset="utf-8"></script>
 	
 	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
 </head>
@@ -56,14 +59,17 @@
 			<div id="tech2_2" class="baseui"><div id="health"></div></div>
 			<div id="tech3_2" class="baseui"><div id="health"></div></div>
 
-			<div id="worker1" class="cardholder"><div id="value">x4</div></div>
+			<div id="worker1" class="cardholder" onclick = "UI.worker1Click()"><div id="value">x4</div></div>
 			<div id="worker2" class="cardholder"><div id="value">x5</div></div>
 
-			<div id="hand0" class="cardholder"></div>
-			<div id="hand1" class="cardholder"></div>
-			<div id="hand2" class="cardholder"></div>
-			<div id="hand3" class="cardholder"></div>
-			<div id="hand4" class="cardholder"></div>
+			<div id="hand0" class="cardholder" onclick = "UI.hand0Click()"></div>
+			<div id="hand1" class="cardholder" onclick = "UI.hand1Click()"></div>
+			<div id="hand2" class="cardholder" onclick = "UI.hand2Click()"></div>
+			<div id="hand3" class="cardholder" onclick = "UI.hand3Click()"></div>
+			<div id="hand4" class="cardholder" onclick = "UI.hand4Click()"></div>
+
+			<div id="gold1">Gold: 0</div>
+			<div id="gold2">Gold: 0</div>
 
 			<div id="infobox">BLAHBLAHBLAH</div>
 		</div>
