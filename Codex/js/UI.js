@@ -20,6 +20,7 @@ var UI = {
 	// handle clicks
 	hand0Click:function(){
 		game.selectCardInHand(0);
+        socket.emit('chat message', $('#m').val());
 	},
 	hand1Click:function(){
 		game.selectCardInHand(1);
