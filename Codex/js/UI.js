@@ -1,14 +1,19 @@
 var UI = {
 	update:function(){
 		// Update hand
-		$("#hand0").css("background-image", "url("+game.hand[1][0].baseCard.pic+")");
-		$("#hand1").css("background-image", "url("+game.hand[1][1].baseCard.pic+")");
-		$("#hand2").css("background-image", "url("+game.hand[1][2].baseCard.pic+")");
-		$("#hand3").css("background-image", "url("+game.hand[1][3].baseCard.pic+")");
-		$("#hand4").css("background-image", "url("+game.hand[1][4].baseCard.pic+")");
+		$("#hand0").css("background-image", "url("+game.players[0].hand[0].pic+")");
+		console.log("a");
+		$("#hand1").css("background-image", "url("+game.players[0].hand[1].pic+")");
+		console.log("a");
+		$("#hand2").css("background-image", "url("+game.players[0].hand[2].pic+")");
+		console.log("a");
+		$("#hand3").css("background-image", "url("+game.players[0].hand[3].pic+")");
+		console.log("a");
+		$("#hand4").css("background-image", "url("+game.players[0].hand[4].pic+")");
+		console.log("a");
 
-		$("#gold1").html("Gold: "+game.gold[1]);
-		$("#gold2").html("Gold: "+game.gold[2]);
+		$("#gold1").html("Gold: "+game.players[0].gold);
+		$("#gold2").html("Gold: "+game.players[1].gold);
 	},
 
 

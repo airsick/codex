@@ -1,40 +1,79 @@
 var game = {
+	players:[],
 	turn:1,
-	phase:"Ready", // Ready, Upkeep, Main, Draw
-	activePlayer:1,
-	base:[,20,20],
-	tech1:[,,],
-	tech2:[,,],
-	tech3:[,,],
-	deck:[,[],[]],
-	hand:[,[],[]],
-	gold:[,4,5],
-	workers:[,4,5],
+	phase:"Upkeep", // Ready, Upkeep, Main, Draw
+	activePlayer:0,
 	start:function(){
+		game.players.push(new Player());
+		game.players.push(new Player());
 		// Use tenderfoot as test card
-		for (var i = 0;i<10;i++){
-			game.deck[1].push(cardInit(cardList["tenderfoot"]));
-			game.deck[2].push(cardInit(cardList["tenderfoot"]));
-		}
+		game.players[0].drawPile.push(new cardList["tenderfoot"]);
+		game.players[0].drawPile.push(new cardList["timelyMessenger"]);
+		game.players[0].drawPile.push(new cardList["olderBrother"]);
+		game.players[0].drawPile.push(new cardList["brickThief"]);
+		game.players[0].drawPile.push(new cardList["helpfulTurtle"]);
+		game.players[0].drawPile.push(new cardList["granfalloonFlagbearer"]);
+		game.players[0].drawPile.push(new cardList["fruitNinja"]);
+		game.players[0].drawPile.push(new cardList["spark"]);
+		game.players[0].drawPile.push(new cardList["bloom"]);
+		game.players[0].drawPile.push(new cardList["wither"]);
 
-		// TODO: Shuffle
+		game.players[1].drawPile.push(new cardList["tenderfoot"]);
+		game.players[1].drawPile.push(new cardList["timelyMessenger"]);
+		game.players[1].drawPile.push(new cardList["olderBrother"]);
+		game.players[1].drawPile.push(new cardList["brickThief"]);
+		game.players[1].drawPile.push(new cardList["helpfulTurtle"]);
+		game.players[1].drawPile.push(new cardList["granfalloonFlagbearer"]);
+		game.players[1].drawPile.push(new cardList["fruitNinja"]);
+		game.players[1].drawPile.push(new cardList["spark"]);
+		game.players[1].drawPile.push(new cardList["bloom"]);
+		game.players[1].drawPile.push(new cardList["wither"]);
 
+		// Shuffle
+		game.players[0].shuffle(game.players[0].drawPile);
+		game.players[1].shuffle(game.players[1].drawPile);
 
 		// draw starting hand
 		for(var i =0; i<5;i++) {
-			game.hand[1].push(game.deck[1].pop());
-			game.hand[2].push(game.deck[2].pop());
+			game.players[0].drawCard();
+			game.players[1].drawCard();
 		}
 		UI.update();
 
-		// start main phase
-		game.phase = "Main";
+		// start the first phase of the game
+		game.upkeepPhase();
 	},
 
 
 	workersLeft:1,
 	status:"Waiting for Selection",
 	selection:{type:"",selection:{},availableTargets:{},target:{}},
+
+	readyPhase:function(){
+
+	},
+
+	upkeepPhase:function(){
+		game.players[game.activePlayer].gold += game.players[game.activePlayer].workers;
+		UI.update();
+		game.phase = "Main";
+	},
+
+	mainPhase:function(){
+
+	},
+
+	discardPhase:function(){
+
+	},
+
+	drawPhase:function(){
+
+	},
+
+	techPhase:function(){
+
+	},
 
 
 
@@ -44,7 +83,7 @@ var game = {
 		if(game.status=="Waiting for Selection") {
 			game.status="Waiting for Target";
 			game.selection.type="Card in Hand";
-			game.selection.selection = game.hand[1][cardpos];
+			game.selection.selection = game.players[0].hand[cardpos];
 			game.selection.availableTargets = ["worker1","battlefield","emptypatrol"];
 		}
 	},
